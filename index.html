@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="menu-title">Restaurant Menu</h1>
+
+    <div class="menu-content">
+
+        <div class="categories">
+
+
+            <h2 class="categories-title">Menu</h2>
+            <h3 class="category-name">Pizza</h3>
+            <h3 class="category-name">Burgers</h3>
+            <h3 class="category-name">Pasta</h3>
+            <h3 class="category-name">Desserts</h3>
+            <h3 class="category-name">Drinks</h3>
+
+
+        </div>
+
+
+
+        <div class="search-bar">
+            <div class="search-container">
+                <input class="search-input" type="text" placeholder="Search menu...">
+
+                <div class="category-picker">
+                    <div class="category-picker-button">Category</div>
+
+                    <div class="category-options">
+                        <div class="category-option" data-category="all">All</div>
+                        <div class="category-option" data-category="pizza">Pizza</div>
+                        <div class="category-option" data-category="burgers">Burgers</div>
+                        <div class="category-option" data-category="pasta">Pasta</div>
+                        <div class="category-option" data-category="desserts">Desserts</div>
+                        <div class="category-option" data-category="drinks">Drinks</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-items-group">
+                <div class="item" data-category="pizza">
+                    <img class="item-image" src="Images/pizza.jpg" alt="Spicy Chicken Ranch">
+                    <div class="item-details">
+                        <h3 class="item-title">Spicy Chicken Ranch</h3>
+                        <p class="item-description">Grilled chicken, tomatoes, mushrooms and jalapeno peppers, chopped
+                            garlic, creamy ranch sauce.</p>
+                    </div>
+                    <div class="item-price-section">
+                        <p class="item-price">£12.00</p>
+
+                        <div class="plus-button">
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="item" data-category="pizza">
+                    <img class="item-image" src="Images/Vegetarian.jpg" alt="Vegetarian">
+                    <div class="item-details">
+                        <h3 class="item-title">Vegetarian</h3>
+                        <p class="item-description">Green pepper, fresh tomato, onion loaded on tomato base and topped
+                            with mozzarella cheese..</p>
+                    </div>
+                    <div class="item-price-section">
+                        <p class="item-price">£10.50</p>
+
+                        <div class="plus-button">
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" data-category="pizza">
+                    <img class="item-image" src="Images/bbq.webp" alt="BBQ Chicken">
+                    <div class="item-details">
+                        <h3 class="item-title">BBQ Chicken Ranch</h3>
+                        <p class="item-description">BBQ sauce, grilled chicken, onions, and mozzarella cheese on a ranch
+                            base.</p>
+                    </div>
+                    <div class="item-price-section">
+                        <p class="item-price">£13.00</p>
+
+                        <div class="plus-button">
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" data-category="burgers">
+                    <img class="item-image" src="Images/bbqcheeseburger.jpg" alt="BBQ Cheeseburger">
+                    <div class="item-details">
+                        <h3 class="item-title">BBQ Cheeseburger</h3>
+                        <p class="item-description">Juicy beef patty, melted cheddar, crispy bacon, and our signature
+                            tangy BBQ sauce, all nestled in a toasted brioche bun..</p>
+                    </div>
+                    <div class="item-price-section">
+                        <p class="item-price">£11.50</p>
+
+                        <div class="plus-button">
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" data-category="burgers">
+                    <img class="item-image" src="Images/vegBurger.jpg" alt="Veggie Supreme">
+                    <div class="item-details">
+                        <h3 class="item-title">Veggie Supreme</h3>
+                        <p class="item-description">A vibrant medley of roasted bell peppers, zucchini, red onions, and
+                            creamy avocado mayo, tucked into a warm ciabatta bun.</p>
+                    </div>
+                    <div class="item-price-section">
+                        <p class="item-price">£9.50</p>
+
+                        <div class="plus-button">
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" data-category="pasta">
+                    <img class="item-image" src="Images/bolognese.jpg" alt="Bolognese Pasta">
+                    <div class="item-details">
+                        <h3 class="item-title">Bolognese Pasta</h3>
+                        <p class="item-description">Classic comfort in a bowl. Rich, slow-cooked meat ragu tossed with
+                            perfectly al dente spaghetti and finished with a sprinkle of fresh Parmesan.</p>
+                    </div>
+                    <div class="item-price-section">
+                        <p class="item-price">£12.00</p>
+
+                        <div class="plus-button">
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" data-category="pasta">
+                    <img class="item-image" src="Images/pastaAlfredo.jpg" alt="Chicken Alfredo Pasta">
+                    <div class="item-details">
+                        <h3 class="item-title">Chicken Alfredo Pasta</h3>
+                        <p class="item-description">Tender grilled chicken breast slices swimming in a luxurious,
+                            velvety
+                            Alfredo sauce made with cream, butter, and Parmesan, clinging perfectly to every strand of
+                            spagh.</p>
+                    </div>
+                    <div class="item-price-section">
+                        <p class="item-price">£13.50</p>
+
+                        <div class="plus-button">
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" data-category="desserts">
+                    <img class="item-image" src="Images/strawberryCake.jpg" alt="Strawberry Cake">
+                    <div class="item-details">
+                        <h3 class="item-title">Strawberry Cheesecake</h3>
+                        <p class="item-description">A slice of pure indulgence. Creamy New York-style strawberry
+                            cheesecake with a
+                            buttery graham cracker crust, crowned with a vibrant swirl of fresh strawberry topping and
+                            a delicate dusting of powdered sugar.
+                        </p>
+                    </div>
+                    <div class="item-price-section">
+                        <p class="item-price">£6.50</p>
+
+                        <div class="plus-button">
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" data-category="desserts">
+                    <img class="item-image" src="Images/doubleChocolate.jpg" alt="Double Chocolate Muffin">
+                    <div class="item-details">
+                        <h3 class="item-title">Double Chocolate Muffin</h3>
+                        <p class="item-description">Indulge your dark chocolate cravings with our decadent Double
+                            Chocolate Muffin. Bursting with rich chocolate chips and topped with a delicate cocoa
+                            drizzle, this soft, moist muffin delivers a double dose of pure chocolate bliss in every
+                            bite.</p>
+                    </div>
+                    <div class="item-price-section">
+                        <p class="item-price">£4.50</p>
+
+                        <div class="plus-button">
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" data-category="drinks">
+                    <img class="item-image" src="Images/vanillaLatte.jpg" alt="Vanilla Latte">
+                    <div class="item-details">
+                        <h3 class="item-title">Vanilla Latte</h3>
+                        <p class="item-description">A classic combination of rich, aromatic espresso and creamy, steamed
+                            milk, enhanced with a touch of sweet vanilla syrup for a delightful twist.</p>
+                    </div>
+                    <div class="item-price-section">
+                        <p class="item-price">£4.00</p>
+
+                        <div class="plus-button">
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" data-category="drinks">
+                    <img class="item-image" src="Images/chocolateLatte.jpg" alt="Chocolate Latte">
+                    <div class="item-details">
+                        <h3 class="item-title">Chocolate Latte</h3>
+                        <p class="item-description">A luxurious blend of bold espresso, velvety steamed milk, and rich
+                            chocolate syrup, crafted to create a decadent and comforting coffee experience with every
+                            sip.
+                        </p>
+                    </div>
+                    <div class="item-price-section">
+                        <p class="item-price">£4.00</p>
+
+                        <div class="plus-button">
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <div class="cart-container">
+            <div class="cart-title">
+
+
+
+
+                <h1 style="font-weight: 500;">Your cart</h1>
+
+
+            </div>
+
+            <div class="empty-cart">
+
+                <h2>Your cart is empty, add an item from the menu to get started.</h2>
+
+
+            </div>
+
+            <div class="cart-info">
+                <p>Quantity: <span id="cart-quantity">0</span></p>
+                <p>Total: £<span id="cart-total">0.00</span></p>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
