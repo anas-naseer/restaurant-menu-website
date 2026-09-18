@@ -39,12 +39,20 @@ buttons.forEach(function (button) {
 
             existingItem.querySelector(".quantity-number").textContent = quantity;
 
+            const originalPrice = Number(existingItem.dataset.originalPrice);
+            existingItem.querySelector(".item-price").textContent =
+                "£" + (originalPrice * quantity).toFixed(2);
+
             updateCart();
             return;
         }
 
         const cartItem = item.cloneNode(true);
 
+        const unitPrice = parseFloat(
+            item.querySelector(".item-price").textContent.replace("£", "")
+        );
+        cartItem.dataset.originalPrice = unitPrice;
         cartItem.dataset.quantity = 1;
 
         const plusButton = cartItem.querySelector(".plus-button");
@@ -93,6 +101,13 @@ buttons.forEach(function (button) {
             cartItem.dataset.quantity = quantity;
             cartItem.querySelector(".quantity-number").textContent = quantity;
 
+            const originalPrice = Number(
+                cartItem.dataset.originalPrice
+            );
+
+            cartItem.querySelector(".item-price").textContent =
+                "£" + (originalPrice * quantity).toFixed(2);
+
             updateCart();
         });
 
@@ -110,6 +125,13 @@ buttons.forEach(function (button) {
 
                 cartItem.dataset.quantity = quantity;
                 cartItem.querySelector(".quantity-number").textContent = quantity;
+
+                const originalPrice = Number(
+                    cartItem.dataset.originalPrice
+                );
+
+                cartItem.querySelector(".item-price").textContent =
+                    "£" + (originalPrice * quantity).toFixed(2);
             }
 
             updateCart();
@@ -143,12 +165,10 @@ function updateCart() {
     cartItems.forEach(function (item) {
 
         const quantity = Number(item.dataset.quantity);
-        const price = parseFloat(
-            item.querySelector(".item-price").textContent.replace("£", "")
-        );
+        const originalPrice = Number(item.dataset.originalPrice) || 0;
 
         totalQuantity += quantity;
-        totalPrice += price * quantity;
+        totalPrice += originalPrice * quantity;
     });
 
     cartQuantity.textContent = totalQuantity;
